@@ -1,0 +1,138 @@
+body{
+    background-color: white;
+}
+nav ul{
+    list-style:none;
+    padding:0;
+    
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+    text-align:right;
+}
+nav ul li a{
+    text-align: right;
+    text-decoration: none;
+    color:#4CAF8B;
+
+}
+h1{
+    text-align:center;
+}
+header{
+
+    background-color:#CBE8CD;
+    padding: 10px 0;
+    color:#4CAF8B;
+    position:relative;
+    justify-content:center;
+    display:flex;
+}
+header .logo-container img {
+    width: 150px;
+    vertical-align: left;
+    margin-right: 10px;
+    height:150px;
+}
+header .logo {
+    height: 90px; /* Adjust logo size */
+    width: 100px;
+}
+header .webpagename {
+    font-size: 48px;
+    text-align: center;
+    margin: 0;
+    flex-grow: 1;
+}
+#change{
+    text-align: center;
+
+}
+#volunteer{
+    background-color: #CBE8CD;
+    border:none;
+    padding: 10px 20px;
+    cursor:pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    color:#4CAF8B;
+}
+#already{
+    background-color: #CBE8CD;
+    border:none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    color:#4CAF8B;
+}
+#about, #Current, #OurProjects, #Contact{
+
+    text-align: center;
+    padding: 20px;
+    color:white;
+
+}
+
+.live{
+    align-items: center;
+    border: 2px solid gray;
+    margin: 10px;
+    padding:10px;
+    width: 50%;
+    display:inline-block;
+    border-radius:10px;
+}
+.card-container {
+    display:inline-flex;
+    /*flex-warp:wrap;*/
+    justify-content: center;
+    padding: 10px;
+    border-radius:20px
+    
+}
+
+.card {
+    background: white;
+    color:black;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border: 2px solid gray;
+    /*transition: transform 0.2s;*/
+}
+
+.card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.card h2 {
+    margin: 10px 0;
+}
+
+.card p {
+    color:black;
+}
+
+.card button {
+    background: #CBE8CD;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+body {
+    background-image: url('Volunteering\ in\ Mexico_\ A\ Full\ List\ of\ Opportunities.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color:white;
+  }
