@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="form.css">
+        <script>
+            function validateForm(){
+                let x=document.forms["myForm"]["pass"].value;
+                let y=document.forms["myForm"]["cpass"].value;
+                if(x!=0){
+                    if(x==y){
+                        checkPhone();
+                        alert("Signed in successfully");
+                    
+                }
+                
+                else{
+                    alert("Recheck the password");
+                    
+                }
+            }
+        
+    }
+    function checkPhone() {
+        var phone = document.forms["myForm"]["phone"].value;
+        var phoneNum = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/; 
+            if(phone.value.match(phoneNum)) 
+            {
+             alert("Correct Phone Number");   
+            }
+            else {
+                document.getElementById("phone").className = document.getElementById("phone").className + " error";
+                alert("Invalid Phone Number");
+                return false;
+            }
+        }
+
+        </script>
+    </head>
+    <body>
+        <center>
+        <h2>SIGN UP on VoluntCH</h2>
+            <form name="myForm" onsubmit="return validateForm()" method="post">
+                <table>
+                        <tr> 
+                            <td> 
+                                <label for="Fname"> Name </label> 
+                            </td> 
+                            <td><input type="text" id="Fname" placeholder="Enter First Name" required/></td> 
+                        </tr>
+            
+                        
+                        <tr> 
+                            <td><label for="Lname">Last Name</label></td> 
+                            <td><input type="text" id="Lname" placeholder="Enter Last Name" required/></td> 
+                        </tr> 
+                        
+                         <tr> 
+                            <td><label for="pno">Phone Number</label></td> 
+                            <td><input type="number" id="pno" placeholder="Enter Phone Number" required/></td> 
+                        </tr> 
+                        <tr>
+                            <td><label for="Gender">Gender</label></td>
+                            <td><input type="radio" id="Gender" name="male"></td>
+                            <td><label for="male">Male</label></td>
+                        </tr>
+                        <tr>    
+                            <td></td>
+                            <td><input type="radio" id="Gender" name="female"></td>
+                            <td><label for="female">Female</label></td>
+                        </tr>            
+                           
+                        
+                        <tr>         
+                            <td><label for="mail">E-mail</label></td>
+                            <td><input type="mail" id="mail" placeholder="Enter E-mail" required></td>
+
+                        </tr>
+                        <tr>
+                            <td><label for="country">Country</label></td>
+                            <td>
+                                <select>
+                                    <option>____</option>
+                                    <option>United States</option>
+                                    <option>India</option>
+                                    <option>Germany</option>
+                                    <option>Europe</option>
+
+                                </select>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td><label for="password">Password</label></td>
+                            <td><input type="password" id="pass"name="pass" placeholder="Password" required></td>
+                            
+                        </tr>
+                        <tr>
+                            <td><label for="confirm password">Confirm Password</label></td>
+                            <td><input type="password" id="cpass"name="cpass" placeholder="Confirm Password" required></td>
+                            
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="checking_age" ></td>
+                            <td><label for="checking_age">I'm above 18 years old</label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="submit" id="submit" name="submit_button" value="submit">SUBMIT APPLICATION</button></td>
+                        </tr>
+                </table>
+            </form>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunch</title>
+    <link rel="stylesheet" href="styles1.css">
+    <script>
+        function mouseEnter(x){
+            x.style.height="250px";
+            x.style.width="350px";
+        }
+        function mouseLeave(x){
+            x.style.height="200px";
+            x.style.width="300px";
+        }
+        function mouseOver(){
+            document.getElementById("volunteer").style.background-color = "white";
+            document.getElementById("volunteer").style.color="#4CAF50";
+        }
+    </script>
+
+</head>
+<body>
+    
+    <header>
+        
+        <div class="logo-container">
+        <img src="volunch_logo-removebg-preview.png" alt="Logo" class="logo"></div>
+        <h1 class="webpagename">Welcome to Volunch</h1>
+    <nav>
+        <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#Current">Live Events</a></li>
+            <li><a href="#OurProjects">Volunteers Community</a></li>
+            <li><a href="#Contact">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="change">
+    <em><strong><p>WITHOUT VOLUNTEERS, WE'D BE A NATION WITHOUT A SOUL</p></strong></em>
+    <h2>Let's Make a difference in Our Community</h2>
+    <p>Join us in our missions to help those in need.</p>
+    <a href="registrationformine.html"><button id="volunteer" onmouseover="mouseOver()">Become a Volunteer</button></a> <a href="login_form.html"> <button id="already" onmouseover="mouseOver()">Login</button></a>
+</section>
+<marquee><a href="newevents.html">Click here to view all upcoming events!!</a></marquee>
+<section id="about" >
+    <center>
+        <h2><b>About Us</b></h2>
+    <p>We are a non-profitable organization to bring a positive impact in our community through volunteer work.Volunch has been a hub for people who want to make a difference. From environmental cleanups to education initiatives, we empower individuals to contribute their time and skills to create a better future. 
+At Voluntch, we believe in the power of community and the difference each individual can make. Our platform connects compassionate volunteers with meaningful opportunities to support causes close to their hearts.  
+Whether it's lending a hand at local events, supporting disaster relief efforts, or helping non-profits thrive, our mission is to make volunteering accessible, impactful, and rewarding.  
+Founded on the principles of kindness and collaboration, [Your Website Name] serves as a bridge between those in need and those eager to help. We work tirelessly to ensure that every connection made through our platform leads to a positive change in lives and communities.  
+Join us in building a brighter, more compassionate world—one act of service at a time. Together, we can inspire change, spark hope, and make a lasting impact. </p>
+</center>
+    
+</section>
+<section id="Current">
+    <h2><b>Live Events</b></h2>
+    <div class="live">
+        <img src="wwofing.jpg" height="200px" width="300px" onmouseenter="mouseEnter(this)" onmouseleave="mouseLeave(this)">
+        <h3>WWOOFing</h3>
+        <p>Willing workers on Organic Farms</p>
+    </div>
+    <div class="live">
+        <img src="womenemp.jpg" alt="not available" height="200px" width="300px" onmouseenter="mouseEnter(this)" onmouseleave="mouseLeave(this)">
+        <h3>Women Empowerment</h3>
+        <p>Join us to encourage the women </p>
+    </div>
+    <div class="live">
+        <img src="tutorial.jpg" height="200px" width="300px" onmouseenter="mouseEnter(this)" onmouseleave="mouseLeave(this)">
+        <h3>Tutoring Program</h3>
+        <p>Volunteer to help students with their studies and homework.</p>
+    </div>
+
+</section>
+<section id="OurProjects">
+    <h3>Volunteers Community</h3>
+    <p>Communicate with peers or experienced voluntees</p>
+    <section class="card-container">
+        
+        <div class="card">
+            <img src="pradisha.jpg" alt="Profile Picture">
+            <h3>Pradisha Mony</h2>
+            <p>Engineering Student</p>
+            <p>Event:Feeding Hope</p>
+            <p>Providing food during COVID-19 was a way to support those in need during uncertain times. It taught me the value of community and the impact small actions can have in bringing hope and relief.</p>
+            <button>Contact</button>
+        </div>
+
+        <div class="card">
+            <img src="shaji.jpg" alt="Profile Picture">
+            <h2>Shaji Benital</h2>
+            <p>Marine Engineer</p>
+            <p>Event:Helping senior farming citenzens </p>
+            <p>As a marine engineer, volunteering in farming offers a refreshing connection to nature and a chance to diversify my problem-solving skills. It’s fulfilling to contribute to sustainable practices while gaining a new perspective on resource management.</p>
+            <button>Contact</button>
+        </div>
+
+        <div class="card">
+            <img src="shambavi.jpg" alt="Profile Picture">
+            <h2>Shambavi</h2>
+            <p>1st MBBS</p>
+            <p>Event:Flood Relief Campaign</p>
+            <p>Assisting in flood relief has been a humbling experience, allowing me to apply my medical knowledge to save lives in critical situations. It’s deeply rewarding to bring hope and care to those in desperate need during such challenging times.</p>
+            <button>Contact</button>
+        </div>
+
+        <div class="card">
+            <img src="abishek.jpg" alt="Profile Picture">
+            <h2>Abishek</h2>
+            <p>Spokesperson</p>
+            <p>Event:LifeLines Initiative</p>
+            <p>Volunteering in blood donation and nursing camps allows me to raise awareness and inspire others to join life-saving initiatives. It's fulfilling to be a voice for such impactful causes and contribute to community health.</p>
+            <button>Contact</button>
+        </div>
+
+        <div class="card">
+            <img src="sreeja.jpg" alt="Profile Picture">
+            <h2>Sreeja Nair</h2>
+            <p>Accountant</p>
+            <p>Event:Numbers of care</p>
+            <p>Volunteering at an orphanage has been a heartwarming way to give back to the community. Using my organizational skills to support the children’s education and well-being brings immense joy and a sense of purpose beyond numbers and spreadsheets.</p>
+            <button>Contact</button>
+        </div>
+    </section>
+</section>
+<section id="Contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out!</p>
+    <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name" required><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your Email" required><br>
+        <label for="message">Comment       </label><br>
+        <textarea id="message" placeholder="Your Message" rows="10" cols="20"></textarea><br>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+    
+</body>
+</html>
